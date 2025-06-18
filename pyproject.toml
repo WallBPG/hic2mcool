@@ -1,0 +1,23 @@
+[project]
+name = "hic2mcool"
+version = "0.0.1"
+description = "A command-line utility for converting .hic to .mcool files"
+authors = [{ name = "Brydon Wall" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "hic-straw",
+    "cooler",
+    "h5py"
+]
+
+[project.scripts]
+hic2mcool = "hic2mcool.hic2mcool:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
