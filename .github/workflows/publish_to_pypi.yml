@@ -5,7 +5,7 @@ on:
     types: [published]
 
 permissions:
-  id-token: write  # Required for OIDC
+  id-token: write
   contents: read
 
 jobs:
@@ -25,7 +25,6 @@ jobs:
             pip
             setuptools
             wheel
-            build
             -c conda-forge
             -c bioconda
             hic-straw
@@ -34,8 +33,11 @@ jobs:
             cooler
             h5py
 
-      - name: Show environment
-        run: micromamba list
+      - name: Install `build` via pip
+        shell: bash -l {0}
+        run: |
+          python -m pip install --upgrade pip
+          pip install build
 
       - name: Build the package
         shell: bash -l {0}
