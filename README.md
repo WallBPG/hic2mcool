@@ -1,7 +1,7 @@
 # hic2mcool
 
 A command-line utility for converting `.hic` to `.mcool` files.
-All `.hic` versions supported by (hic-straw)[https://pypi.org/project/hic-straw/] are supported.
+All `.hic` versions supported by [hic-straw](https://pypi.org/project/hic-straw/) are supported.
 
 # Installation
 
