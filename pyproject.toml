@@ -1,6 +1,6 @@
 [project]
 name = "hic2mcool"
-version = "0.0.1"
+version = "0.0.2"
 description = "A command-line utility for converting .hic to .mcool files"
 authors = [{ name = "Brydon Wall" }]
 license = { text = "MIT" }
